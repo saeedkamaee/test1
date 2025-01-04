@@ -1,0 +1,26 @@
+class Stu:
+    __slots__:("name",)
+    def __init__(self,name:str,family):
+        # family:None|str=None,code:None|str=None
+        self.name=name
+        self.family=family
+    @property
+    def name (self):
+        return self._name
+    @name.setter
+    def name(self,value):
+        if isinstance(value,str):
+            self._name=value
+        else:
+            raise ValueError
+        
+
+s1=Stu(name="123",family="kama")
+print(s1.name)
+input()
+if isinstance(s1,Stu):
+
+    print("true")
+else:
+    print("false")
+
