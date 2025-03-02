@@ -39,24 +39,24 @@ class Stu:
     def __hash__(self):
         return hash(str(self))
         
-        
+if __name__=="__main__":        
 
-s1=Stu(name="ali",family="moradi")
-print(s1.name)
-print(s1)
-print(callable(s1))
-s2=Stu(name="saeed",family="kama")
-print(s2)
-print(s1==s2)
+    s1=Stu(name="ali",family="moradi")
+    print(s1.name)
+    print(s1)
+    print(callable(s1))
+    s2=Stu(name="saeed",family="kama")
+    print(s2)
+    print(s1==s2)
 
-s3=Stu(name="saeed",family="kama")
-print(s3)
-print(s3==s2)
-input()
-if isinstance(s1,Stu):
+    s3=Stu(name="saeed",family="kama")
+    print(s3)
+    print(s3==s2)
+    input()
+    if isinstance(s1,Stu):
 
-    print("true")
-else:
-    print("false")
+        print("true")
+    else:
+        print("false")
 
 
